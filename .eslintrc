@@ -1,0 +1,26 @@
+{
+    "extends": ["prettier", "eslint:recommended"],
+    "plugins": ["prettier"],
+    "parserOptions": {
+        "parser": "@babel/eslint-parser",
+        "sourceType": "module",
+        "requireConfigFile": false // <== ADD THIS
+    },
+    "rules": {
+        "prettier/prettier": "error",
+        "no-unused-vars": "error",
+        "no-console": "off",
+        "func-names": "off",
+        "no-process-exit": "off",
+        "object-shorthand": "off",
+        "class-methods-use-this": "off",
+        "jsxSingleQuote": true,
+        "trailingComma": "none",
+        "curly": "error",
+        "quotes": ["error", "double"],
+        "require-atomic-updates": "off",
+        "no-undef": "warn",
+        "quote-props": ["error", "consistent"],
+        "no-magic-numbers": "off"
+    }
+}
